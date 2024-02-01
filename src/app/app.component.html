@@ -1,0 +1,13 @@
+<h1>APP</h1>
+
+<section>
+    <form>
+      <input type="text" placeholder="Filter by App">
+      <button class="primary" type="button">Search</button>
+    </form>
+  </section>
+  <section class="results">
+    <app-home3 class="result" *ngFor="let housingLocation of housingLocationList" [housingLocation]="housingLocation"></app-home3>
+</section>
+  
+<router-outlet></router-outlet>
